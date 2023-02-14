@@ -117,6 +117,14 @@ p {
     display: none;
 }
 
+.header__nav-item:first-child {
+    padding-top: 1rem;
+}
+
+.header__nav-item:last-child {
+    padding-bottom: 1rem;
+}
+
 .header__button-burger {
     display: none;
 }
@@ -273,7 +281,7 @@ p {
     background: transparent 4% / 1.5rem no-repeat;
     border: 1px solid #146B06;
     border-radius: 0.2rem;
-    padding: .7rem 1.5rem .7rem 3rem;
+    padding: .5rem 1.2rem .5rem 3rem;
     transition: all 0.2s linear;
 }
 
@@ -535,13 +543,44 @@ div.dataTables_wrapper .dataTables_filter input {
     }
 
     .header__nav-list {
-        display: none;
+        /* display: none;
         position: absolute;
         background: #146B06;
         left: 0;
         right: 0;
+        top: 0; */
+
+        display: none;
+        position: fixed;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 100%;
         top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(28,33,29,.8);
     }
+
+    .header__nav-item {
+        background: #146B06;
+    }
+
+    .header__nav-link {
+        background-position: 1.5rem;
+        padding: .5rem 0 .5rem 3.5rem;
+    }
+
+    /* .header__nav-list::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: aqua;
+    } */
 
     .header__nav-item--close {
         display: block;
@@ -698,6 +737,14 @@ div.dataTables_wrapper .dataTables_filter input {
         padding: .5rem 1rem;
     }
 
+    .languages-list--header {
+        gap: 0.2rem;
+    }
+
+    .header__nav-link {
+        background-position: 4%;
+    }
+
     .header__languages-list {
         gap: 0.2rem;
     }
@@ -708,6 +755,7 @@ div.dataTables_wrapper .dataTables_filter input {
 
     .header__button-close {
         right: 1rem;
+        top: 1.2rem;
     }
 
     .header__logo {
