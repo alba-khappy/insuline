@@ -469,8 +469,8 @@ div.dataTables_wrapper .dataTables_filter input {
 }
 
 .article__description {
-    word-break: break-all;
     font-size: .8rem;
+    line-height: 1.2;
 }
 
 
@@ -496,6 +496,10 @@ div.dataTables_wrapper .dataTables_filter input {
 
 .footer__nav-link {
     border-bottom: 2px solid #FFF;
+}
+
+.footer__privacy-link {
+    border-bottom: 1px solid #FFF;
 }
 
 .languages-list--footer {
@@ -769,7 +773,7 @@ div.dataTables_wrapper .dataTables_filter input {
     }
 
     .content__section {
-        padding: 2rem 1rem .5rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .content__category-list {
