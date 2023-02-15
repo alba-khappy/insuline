@@ -102,7 +102,11 @@ p {
     transition: all 0.2s linear;
 }
 
-.current-lang a  {
+.languages-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.current-lang a, .current-lang a:hover  {
     background-color: #FFF;
     color: #146B06;
 }
@@ -495,11 +499,14 @@ div.dataTables_wrapper .dataTables_filter input {
 }
 
 .footer__nav-link {
+    font-size: .8rem;
     border-bottom: 2px solid #FFF;
+    transition: all 0.2s linear;
 }
 
-.footer__privacy-link {
-    border-bottom: 1px solid #FFF;
+.footer__nav-link:hover {
+    color: #6AAD36;
+    border-bottom: 2px solid #6AAD36;
 }
 
 .languages-list--footer {
@@ -515,6 +522,14 @@ div.dataTables_wrapper .dataTables_filter input {
 
 .footer__privacy-content {
     display: inline-block;
+}
+
+.footer__privacy-link {
+    transition: all 0.2s linear;
+}
+
+.footer__privacy-link:hover {
+    color: #6AAD36;
 }
 
 .footer__about-info {
@@ -740,12 +755,6 @@ div.dataTables_wrapper .dataTables_filter input {
 
     .header__logo {
         width: 5rem;
-    }
-
-    .header__languages-link {
-        width: 1.5rem;
-        height: 1.5rem;
-        font-size: .5rem;
     }
 
     .content__section {
